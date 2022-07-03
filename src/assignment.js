@@ -23,9 +23,9 @@ function sumOfNumbers(arrayOfNumbers) {
     // return arrayOfNumbers.length;
   return sum;
 }
-let numbers = [10, 20, 30, 40, 50]
-console.log(sumOfNumbers(numbers))
-// assignment.sumOfNumbers = sumOfNumbers;
+// let numbers = [10, 20, 30, 40, 50]
+// console.log(sumOfNumbers(numbers))
+assignment.sumOfNumbers = sumOfNumbers;
 
 // END...
 
@@ -43,23 +43,23 @@ console.log(sumOfNumbers(numbers))
 //THIS IS CHALLENGE 2.. THE COUNT OF EVEN NUMBERS IN AN ARAY
 
 function countEvenNumbers(arrayOfNumbers){
-  // let count = 0
-  for(let count of arrayOfNumbers){
-    if (count % 2 === 0){
-      console.log (`This is an even number: ${count}`)
+  let count = 0
+  for(let i = 0; i < arrayOfNumbers.length; i++){
+    if (arrayOfNumbers[i] % 2 === 0){
+      count++
+      // return count;
     }
 
   }
-  // if ( == 0){
-    // count
-  // }
-  
-  return arrayOfNumbers.length
+  return count  
+  // return arrayOfNumbers.length
 }
-let count= [2, 3, 4, 5, 6, 7, 8, 9, 10]
-countEvenNumbers(count)
+// let count= [2, 3, 4, 5, 6, 7, 8, 9, 10]
+// countEvenNumbers(count)
 
-// assignment.countEvenNumbers = countEvenNumbers;
+assignment.countEvenNumbers = countEvenNumbers;
+
+//END..
 
 /**
  * Challenge - 3
